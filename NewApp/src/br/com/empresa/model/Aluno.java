@@ -2,11 +2,11 @@ package br.com.empresa.model;
 import br.com.empresa.App;
 
 public class Aluno {
-	String nome;
-	double altura;
-	int idade;
-	char sexo;
-	double peso;
+	private String nome;
+	private double altura;
+	private int idade;
+	private char sexo;
+	private double peso;
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -44,7 +44,12 @@ public class Aluno {
 	public double getPeso() {
 		return this.peso;
 	}
-//	static void calcularImc() {
-//		double imc = 
+	public double calcularImc() {
+		double result = (getPeso() + getAltura() * getAltura());
+		return result;
+	}
+//	public double calcularNcd() {
+//		double resul
 //	}
+	
 }

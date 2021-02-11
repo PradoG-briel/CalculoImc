@@ -1,7 +1,0 @@
-package br.com.empresa;
-
-public class Aluno {
-		private double altura;
-		private double base;
-
-	}
